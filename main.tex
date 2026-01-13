@@ -1,0 +1,398 @@
+\documentclass[a4paper,20pt]{article}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{fontawesome} % Ensure this package is installed
+\usepackage{longtable}
+\usepackage[margin=0.5in]{geometry}
+
+\newcommand{\ExternalLink}{\textcolor{black}{\faExternalLink}}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[2]{
+  \item[]\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingN}[2]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+% \renewcommand{\labelitemi}{\textbullet}
+\renewcommand{\labelitemii}{\textbullet}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{minipage}{0.75\textwidth}
+    {\Huge \textbf{Akindu Delgahagoda}} \\ [4pt]
+    \large Undergraduate Student \\ [4pt]
+    \small
+    \href{https://www.linkedin.com/in/akinduid/}{{\color{black}\faLinkedin} linkedin.com/in/akinduid} $|$ 
+    \href{https://github.com/AkinduID/}{{\color{black}\faGithub} github.com/akinduid } \\ [2pt]
+    \faEnvelope\ \href{mailto:akindu.21@cse.mrt.ac.lk}{akindu.21@cse.mrt.ac.lk} $|$ 
+    \faPhone\ +9471 631 2630
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\textwidth}
+    \begin{flushright}
+        \includegraphics[width=2.5cm]{me2.png} % Replace with the path to your photo
+    \end{flushright}
+\end{minipage}
+
+%-----------About me-----------------
+\section{Personal Statement}
+\vspace{2pt}
+Engineering undergraduate with a specialized focus on robotics and distributed systems architecture. Proficient in bridging the gap between embedded hardware and cloud services to create cohesive intelligent solutions. Brings a rigorous, analytical approach to system design, combining theoretical depth with the practical expertise needed to deliver robust, full-stack engineering projects.
+
+%-----------Education-----------------
+\vspace{2pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \vspace{5pt}
+    \resumeSubheading
+        {University of Moratuwa}{Bandaranayake Mawatha, Moratuwa 10400}
+        {BSc Eng Hons, Computer Science and Engineering}
+        {2022 - 2026}
+        \vspace{-3pt}
+      \textit{ \newline{} Stream - Integrated Computer Engineering}
+    \vspace{3pt}
+    \resumeSubheading
+      {Sabaragamuwa University of Sri Lanka}{Belihuloya, Ratnapura}
+      {Diploma in English $|$ Credit Pass}{2021 - 2022}
+
+    \vspace{3pt}
+    \resumeSubheading
+      {Sivali Central College}{Hidellana, Ratnapura}
+      {GCE A/L 2020 $|$ Physical Science Stream $|$ 3A Passes}{2007 - 2020}
+      \vspace{-3pt}
+       \textit{ \newline{} GCE O/L 2017 $|$ 9A Passes}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------Professional Experience-----------------
+\vspace{2pt}
+\section{Professional Experience}
+\vspace{2pt}
+\resumeSubHeadingListStart
+    \resumeSubheading{WSO2}{105, Bauddhaloka Mawatha, Colombo 4}{Intern Software Engineer, Digital Transformation Team}{Jan 2025 - Jun 2025}
+    \begin{itemize}
+        \item Developed "Infra Portal," a full-stack infrastructure automation platform using \textbf{Ballerina}, \textbf{React} and \textbf{MySQL} to replace legacy manual workflows, streamlining GitHub repository provisioning across the company.
+        \item Upgraded and optimized existing internal middleware services to facilitate seamless integration with the GitHub API using \textbf{GraphQL}, ensuring robust communication between the new portal and external providers.
+        \item Architected the solution to be extensible beyond GitHub, designing a scalable foundation to support future infrastructure automation requirements.
+        \item Implemented secure authentication using \textbf{Asgardeo} and deployed the production-ready containerized application on \textbf{Choreo} for internal organizational use.
+    \end{itemize}
+\resumeSubHeadingListEnd
+
+%-----------Skills-----------------
+\vspace{2pt}
+\section{Skills}
+\vspace{2pt}
+\resumeSubHeadingListStart
+    \resumeItem{Programming Languages}{Python $|$ C/C++ $|$ C\# $|$ VHDL $|$ Java $|$ JavaScript $|$ Ballerina}
+    \resumeItem{Database}{MySQL $|$ SQLite}
+    \resumeItem{Frameworks and Libraries}{OpenCV $|$ ROS $|$ React $|$ Node-RED $|$ FastAPI $|$ Streamlit $|$ PyQt $|$ TensorFlow $|$ PyTorch}
+    \resumeItem{Tools}{Git $|$ GitHub $|$ Docker $|$ Xilinx Vivado}
+    \resumeItem{Technical Fields}{Embedded Systems $|$ Robotics $|$ IoT $|$ Machine Learning $|$ Computer Vision $|$ DevOps}
+    \resumeItem{Hardware Platforms}{Arduino $|$ ESP32 $|$ Raspberry Pi $|$ STM32 $|$ Nvidia Jetson Orin}
+\resumeSubHeadingListEnd
+
+%-----------Projects-----------------
+\vspace{2pt}
+\section{Projects}
+\vspace{2pt}
+\resumeSubHeadingListStart
+\resumeSubheading
+{JetVIO}{July 2025 -- Ongoing}
+{Python $|$ C++ $|$ ROS}{Final Year Project (Group)}
+\begin{itemize}
+    \item Development of a visual–inertial navigation system for autonomous UAV operation in GPS-denied environments.
+    \item Assembled the UAV platform and initiated simulation-based testing to evaluate system behavior and identify key limitations.
+    \item Targeting a validated UAV capable of stable state estimation and autonomous navigation without GPS.
+\end{itemize}
+
+\resumeSubheading
+{FPGA Audio Spectrum Analyzer\href{https://github.com/AkinduID/FPGA-Spectrum-Visualizer}{\faGithub}}{Jul 2025 -- Dec 2025}
+{VHDL $|$ Xilinx Vivado $|$ Nexys A7 FPGA }{Module Project (Group)}
+\begin{itemize}
+    \item Real-time hardware-accelerated audio visualizer performing FFT analysis and VGA rendering on an FPGA.
+    \item Experimented with audio input subsystem using UART and I2S protocols.
+    \item Deployed on Nexys A7 FPGA Board and achieved low-latency signal processing and synchronized playback.
+\end{itemize}
+
+\resumeSubheading
+{QUOT3D -- Automating 3D Printing Quotation}{Jan 2025 -- Jun 2025}
+{Python $|$ FastAPI $|$ Docker $|$ Git}{Module Project (Group)}
+\begin{itemize}
+    \item Web-based platform for generating instant and accurate 3D printing quotations from uploaded 3D models by slicing the model.
+    \item Developed the backend service to analyze 3D model files and extract pricing-related metrics.
+    \item Enabled automated, vendor-configurable quotation generation, reducing manual communication overhead.
+\end{itemize}
+
+\resumeSubheading
+{FazeTrak -- Smart Webcam \href{https://github.com/AkinduID/FazeTrak}{\faGithub}}{Jul 2024 -- Nov 2024}
+{Python $|$ C++ $|$ OpenCV $|$ PyQt $|$ ESP32}{Semester Project (Individual)}
+\begin{itemize}
+    \item Smart webcam system with face recognition and gesture-based face locking and tracking.
+    \item Implemented computer vision pipeline, servo control logic, and desktop application for hardware integration.
+    \item Achieved real-time face tracking with pan--tilt control and streaming video for usage of other applications via OBS Virtual Camera Driver.
+\end{itemize}
+
+\resumeSubheading
+{MinerShield}{Jul 2024 -- Oct 2024}
+{C++ $|$JavaScript $|$ ESP32 $|$ Node-RED}{Competition Project (Group)}
+\begin{itemize}
+    \item IoT-based wireless monitoring system for miner safety in underground environments.
+    \item Contributed to embedded system integration, IoT workflow development and frontend development.
+    \item Demonstrated reliable environmental and miner-status monitoring through a prototype sensor network.
+\end{itemize}
+
+\resumeSubheading
+{MechaPulse \href{https://github.com/AkinduID/MechaPulse}{\faGithub}}{Jan 2024 -- May 2024}
+{C++ $|$ ESP32 $|$ Raspberry Pi $|$ Python $|$ FastAPI}{Competition Project (Group)}
+\begin{itemize}
+    \item Industrial IoT system for machinery fault detection using acoustic signal analysis via Machine Learning.
+    \item Led the deployment of ML models on Raspberry Pi and managed embedded system integration.
+    \item Validated fault detection of a drill machine using the prototype system.
+\end{itemize}
+
+\resumeSubheading
+{Smart MediBox \href{https://github.com/AkinduID/Smart-MediBox}{\faGithub}}{Jan 2024 -- Mar 2024}
+{Arduino $|$ ESP32 $|$ IoT $|$ PCB Design}{Module Project (Individual)}
+\begin{itemize}
+    \item Smart medicine container for indicating scheduled medicine intake times.
+    \item Designed embedded firmware, IoT connectivity, and Node-RED based control dashboard.
+    \item Delivered a functional prototype supporting remote monitoring and timely medication alerts.
+\end{itemize}
+
+\resumeSubheading
+{AspireTrust -- Bank Transaction and Loan Processing System \href{https://github.com/AkinduID/AspireTrust}{\faGithub}}{Sep 2023 -- Nov 2023}{MySQL $|$ HTML $|$ CSS $|$ Git}{Module Project (Group)}
+\begin{itemize}
+    \item Database-driven banking system supporting transactions and loan processing.
+    \item Contributed to database schema design and query implementation.
+    \item Produced a simple prototype system demonstrating robust database management practices.
+\end{itemize}
+
+\resumeSubheading
+{Nanoprocessor \href{https://github.com/AkinduID/Nano-Processor-Final}{\faGithub}}{May 2023 -- Jun 2023}
+{VHDL $|$ Xilinx Vivado $|$ Basys3 FPGA }{Module Project (Group)}
+\begin{itemize}
+    \item Custom-designed 4-bit nanoprocessor implemented on FPGA hardware.
+    \item Architected the top-level processor design and managed simulation workflows.
+    \item Successfully deployed and validated the processor on a Basys3 FPGA board.
+\end{itemize}
+
+\resumeSubHeadingListEnd
+\vspace{3pt}
+
+%-----------Certifications-----------------
+ \section{Certifications}
+
+\vspace{3pt}
+
+\begin{tabular}{ @{} l @{\hspace{3ex}} l }
+
+
+\textbf{Embedded AI} 
+
+& Getting Started with Machine Learning at the Edge: \textit{Arm $|$ Apr 2025 $|$ \href{https://www.coursera.org/account/accomplishments/records/G67BGUIWZ3OR}{\ExternalLink}}  \\[2.5pt]
+
+& Computer Vision with Embedded Machine Learning: \textit{Edge Impulse $|$ Mar 2025 $|$ \href{https://www.coursera.org/account/accomplishments/records/Q9DGH6M1GC98}{\ExternalLink}} \\[2.5pt]
+
+& Introduction to Embedded Machine Learning: \textit{Edge Impulse $|$ Mar 2025 $|$ \href{https://www.coursera.org/account/accomplishments/records/WZ9FP80YCWG0}{\ExternalLink}} \\[5.5pt]
+
+
+\textbf{Computer Vision \& AI} 
+
+& Vision Language Models Bootcamp: \textit{OpenCV University $|$ Dec 2025 $|$ \href{https://courses.opencv.org/certificates/e16aa8e0527a48878bc8e3e7d4855ba3}{\ExternalLink}} \\[2.5pt]
+
+& Fundamentals of Deep Learning: \textit{NVIDIA DLI $|$ Dec 2025 $|$ \href{https://learn.nvidia.com/certificates?id=nb9tXyHuQa2hKNHb-5K5UQ}{\ExternalLink}} \\[2.5pt]
+
+& Computer Vision: \textit{Kaggle $|$ Dec 2024 $|$ \href{https://www.kaggle.com/learn/certification}{\ExternalLink}} \\[2.5pt]
+
+& Intro to Machine Learning: \textit{Kaggle $|$ Jan 2024 $|$ \href{https://www.kaggle.com/learn/certification/akindu/intro-to-machine-learning}{\ExternalLink}}\\[5.5pt]
+
+
+\textbf{Embedded Systems} 
+
+& Arm Cortex-M Architecture \& Software Development: \textit{Arm $|$ Apr 2025 $|$ \href{https://www.coursera.org/account/accomplishments/specialization/K5U56FU21YHT}{\ExternalLink}}  \\[2.5pt]
+
+& Embedded Software \& Hardware Architecture: \textit{CU Boulder $|$ Mar 2025 $|$ \href{https://www.coursera.org/account/accomplishments/records/0DSZ5KV1QA8U}{\ExternalLink}} \\[5.5pt]
+
+
+\textbf{DevOps \& Engineering}
+
+& GitHub Foundations: \textit{GitHub $|$ Mar 2025 $|$ \href{https://www.credly.com/badges/d6a40c22-0a83-45bc-bf22-c661210b70b4/linked_in_profile}{\ExternalLink}} \\[2.5pt]
+
+& Docker Training for Absolute Beginners: \textit{KodeKloud $|$ Feb 2025 $|$ \href{https://learn.kodekloud.com/certificate/5c67d473-586c-47eb-825f-7e788d3e8bb2}{\ExternalLink}} \\
+
+
+\end{tabular} 
+
+%-----------Extra Curricular Activities-----------------
+\vspace{3pt}
+\section{Extra Curricular Activities}
+\vspace{3pt}
+% Group by organization and consolidate roles to reduce repetition
+\resumeSubHeadingListStart
+  % IEEE RAS Student Branch
+  \resumeSubheading
+    {IEEE Robotics and Automation Society Student Branch, UoM}
+    {}{}{}
+    \vspace{-20pt}
+    \begin{itemize}
+    \item Term 24/25 - Secretary  \hfill Oct 2024 -- Oct 2025\\
+    \item Term 23/24 - Vice Chairman  \hfill Oct 2023 -- Oct 2024\\
+    \item Term 22/23 - Member|Design Committee  \hfill Oct 2022 -- Oct 2023\\
+    \item BotTalks 1.0 - Co Chair \hfill Mar 2023 -- Apr 2023\\
+    \end{itemize}
+\vspace{3pt}
+
+  % IEEE Student Branch
+  \resumeSubheading
+    {IEEE Student Branch, University of Moratuwa}{}{}{}
+    \vspace{-20pt}
+    \begin{itemize}
+    \item Term 23/24 - Member|Membership Development Committee  \hfill Nov 2023 -- Nov 2024 \\
+    \item IEEE Open Week - Volunteer|Chapter Coordination Committee  \hfill Feb 2024 -- Mar 2024\\
+    \item MoraForesight 1.0 - Volunteer|Finance Committee,Design Committee \hfill Mar 2023 -- Aug 2023\\
+\end{itemize}
+\vspace{3pt}
+
+  % Mora Hiking Club
+  \resumeSubheading
+    {Mora Hiking Club, University of Moratuwa}{}{}{}
+    \vspace{-20pt}
+    \begin{itemize}
+    \item Stridian 2025 - Media Team \hfill July 2025 -- Sep 2025\\
+    \item Stridian 2024 - Health Team \hfill July 2024 -- Sep 2024\\
+    \item Stridian 2023 - Participant \hfill July 2023 -- Sep 2023\\
+    \end{itemize}
+\vspace{3pt}
+
+  % CSE Department
+  \resumeSubheading
+    {Department of Computer Science and Engineering, University of Moratuwa}{}{}{}
+     \vspace{-20pt}
+    \begin{itemize}
+    \item CSE40 - Volunteer|Marketing Committee \hfill Jan 2025 -- May 2025\\
+    \item Hit The Grounds - Volunteer|Marketing Committee \hfill Dec 2024 -- Jan 2025\\
+    \item CSE Career Fair 2024 - Volunteer|Company Coordination Committee\hfill Dec 2023 -- Jan 2024\\
+    \end{itemize}
+\vspace{3pt}
+
+  \resumeSubheading
+    {Techno 2023 Exhibition, IESL IT and Computer Engineering}{}{}{}
+     \vspace{-20pt}
+    \begin{itemize}
+    \item Graphic Designer \hfill Sep 2023 -- Oct 2023\\
+    \item  Demonstrator \hfill Sep 2023 -- Oct 2023\\
+    \end{itemize}
+\vspace{3pt}
+
+  \resumeSubheading
+    {Exmo 2023 Exhibition, University of Moratuwa}{}{}{}
+     \vspace{-20pt}
+    \begin{itemize}
+    \item Event Committee Member \hfill Mar 2023 --  Jul 2023\\
+    \end{itemize}
+\vspace{3pt}
+
+
+\resumeSubHeadingListEnd
+
+
+%-----------Awards & Achievements-----------------
+\vspace{3pt}
+\section{Awards \& Achievements}
+\vspace{3pt}
+\resumeSubHeadingListStart
+    \resumeItem{Dean's List}{Semester 6}
+    \resumeItem{Evolve IoT Mini Research Competition}{1st Place}
+    \resumeItem{SLIoT Challenge 2023}{Semifinalists}
+    \resumeItem{President's Scout Award}{Issued in 2019}
+    \resumeItem{National Junior Science Olympiad 2016}{Gold Medal}
+    \resumeItem{International Mathematics and Science Olympiad 2013}{Silver Medal}
+    \resumeItem{National Mathematics and Science Olympiad 2013}{Bronze Medal}
+\resumeSubHeadingListEnd
+
+%-----------References-----------------
+\vspace{3pt}
+\section{References}
+\vspace{3pt}
+\begin{minipage}{0.48\textwidth}
+    \textbf{Prof. Dulani Meedeniya} \\
+    Department of CSE \\
+    University of Moratuwa. \\
+    Email: \texttt{dulanim@cse.mrt.ac.lk}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+    \textbf{Dr. Sulochana Sooriyaarachchi} \\
+    Department of CSE \\
+    University of Moratuwa. \\
+    Email: \texttt{sulochanas@cse.mrt.ac.lk}
+\end{minipage}
+
+\end{document}
