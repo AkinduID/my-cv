@@ -6,7 +6,7 @@ This repository contains the LaTeX source code for my Curriculum Vitae.
 
 The CV is written in LaTeX and is automatically compiled and deployed using GitHub Actions.
 
-- **Latest PDF Version:** [Download CV](https://AkinduID.github.io/my-cv/cv.pdf)
+- **Latest PDF Version:** [Download CV](https://AkinduID.github.io/my-cv/akindu_delgahagoda_cv.pdf)
 - **Viewer:** [View Online](https://AkinduID.github.io/my-cv/)
 
 ## 🛠️ Automated Build
