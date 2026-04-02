@@ -1,5 +1,9 @@
 # CV - Akindu Delgahagoda
 
+<a href="https://www.latex-project.org/"/><img src = "https://img.shields.io/badge/LaTeX-00A0A0?logo=latex&logoColor=fff"/></a>
+<a href="https://github.com/features/actions"/><img src = "https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white"/></a>
+<a href="https://pages.github.com/"/><img src = "https://img.shields.io/badge/GitHub%20Pages-121013?logo=github&logoColor=white"/></a>       
+
 This repository contains the LaTeX source code for my Curriculum Vitae.
 
 ## 🚀 Overview
